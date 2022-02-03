@@ -2,6 +2,57 @@
 
 **TODO**: Edit this file. Your project proposal goes here. Save and delete the developer notes when done.
 
+# Analysis of Nuclear Energy
+
+## Code Name
+No Emissions
+
+## Authors
+Zohaib Javed:	zjaved@uw.edu \
+Aakash Krishna:	ak8271@uw.edu \
+Christopher Li:	qiaol4@uw.edu \
+Ajay Pai:	ajaypai@uw.edu
+
+## Affiliation
+INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
+
+## Date
+February 4, Winter 2022
+
+## Abstract
+Our main question is if nuclear energy can be a viable alternative energy source. This question is important because major changes in power generation are needed to reduce emissions and slow climate change. To address this question, we will analyze data about greenhouse gas emissions as well as global energy production and consumption.
+
+## Keywords
+nuclear energy; climate change; greenhouse gas
+
+## Proposal
+### 1.0 Introduction
+Ajay
+
+### 2.0 Design Situation
+Chris
+
+### 3.0 Research Questions
+1. How prevalent is nuclear energy in the world right now?
+2. How does nuclear energy contribute to climate change?
+3. How does nuclear energy compare to other forms of alternative energy?
+4. How do nuclear power plants affect human population?
+
+### 4.0 The Dataset
+Zohaib
+
+### 5.0 Expected Implications
+Aakash
+
+### 6.0 Limitations
+Aakash
+
+## Acknowledgements
+
+## References
+
+## Appendix A: Questions
+
 ## Developer Notes
 
 * **Where is the project brief?**  [`../instructions/project-design-brief.pdf`](../instructions/project-design-brief.pdf).
@@ -14,8 +65,8 @@
 
 |Element | Brief Description|
 |---------------| --------------
-|Code name | Give your project a _code name_, a short, evocative name for efficiently referring to your project. Your code name does not change! Examples: _Jazz-4_, _Rocking Fish_, etc. | 
-|Project title| Give your project a concise, interesting title that summarizes the entirety of your project. (Your title can change on subsequent deliverables.) |
+|Code name | No Emissions | 
+|Project title| Analysis of Nuclear Energy |
 |Authors | Names of your team members and contact information (email addresses). |
 |Affiliation |  INFO-201: Technical Foundations of Informatics - The Information School - University of Washington |
 |Date | Winter 2022|
