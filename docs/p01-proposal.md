@@ -30,7 +30,30 @@ nuclear energy; climate change; greenhouse gas
 Ajay
 
 ### 2.0 Design Situation
-Chris
+We all know that the natural resource is the basic condition of our lives. However, human beings have never stopped acquiring natural resources since our birth. In agricultural society, people mainly rely on natural resources such as land, sunshine and water to survive. In the industrial society, people dig out the mineral resources buried underground and put them into industrial production as raw materials and fuels. At the same time, they also increase the development and utilization of other natural resources. 
+
+When the speed of human acquisition of natural resources exceeds the speed of supply, regeneration and proliferation of natural resources, the problem of shortage of natural resources will appear. This is a figure published by N. Sönnichsen, Dec 22, 2021. This statistic shows the distribution of selected energy carriers as a share of non-renewable energy production worldwide from 2007 to 2018. We could see that petroleum, hard coal and natural gas are the main parts.
+
+[![Distribution of selected energy carriers as a share of non-renewable energy production worldwide from 2008 to 2018](/Christopher/desktop/stat.png)](https://www.statista.com/statistics/263232/global-production-of-non-renewable-energy-resources/#statisticContainer)
+
+Besides the problem of depletion, overloaded use of non-renewable resources could also cause serious environmental problems. For example, one impact of using non-renewable energy sources is the emission of greenhouse gases, in particular carbon dioxide and methane, which contribute to climate change.
+[*According to the article Harmful Effects of Non-Renewable Resources on the Environment*](https://greentumble.com/harmful-effects-of-non-renewable-resources-on-the-environment/) published by Greentumble in Feb 23, 2017.
+
+> Coal is considered the worst emitter of carbon dioxide. In the US, CO2 emissions from the electric power sector calculated in 2015 indicate that 71 percent were attributable to coal . While for example natural gas produced around 28 percent of carbon dioxide emissions. Indeed, natural gas emits a lot less carbon dioxide, specifically 50 to 60 percent less compared to coal, and it also emits 15 to 20 percent fewer heat-trapping gases compared to gasoline when used to power a vehicle.However, that does not mean that natural gas can help mitigate climate change, as drilling and extracting natural gas from wells results in the leakage of methane, which is a much more potent greenhouse gas – it is 34 times stronger than CO2 in terms of its potential for trapping heat.
+
+The concerns about greenhouse gas emissions and climate change are cross-cutting, and the main resources human are using is limited. Therefore,  it is necessary to have an alternative energy, and our group decide to focus on nuclear energy. 
+
+Firstly, the uranium is the main resource used in nuclear power generation. This element might be the key factor to the sustainable development in the future. 
+
+> “As new power reactors come online and others are retired, proper supply and management of uranium will be a critical factor in energy supply in the coming decades,” said Adrienne Hanly, uranium resources specialist at the IAEA. “Uraniumbased fuel is expected to remain a basic, reliable source for low-carbon nuclear power. How we utilize this fuel will greatly depend on the development of new technologies and strategies for sustainable resource management.”
+
+Secondly, nuclear power has less damage to the climate. A journalist Daniel Van Boom says this in his article [*How Nuclear Power Plants Could Help Solve the Climate Crisis*](https://www.cnet.com/news/how-nuclear-power-plants-could-help-solve-climate-crisis/) on Nov. 16, 2021.
+
+> Though the word evokes images of landscapes pulverized by atomic calamity -- Hiroshima, Chernobyl, Fukushima -- proponents like Detering and his colleague Eric Dawson point out that nuclear power produces huge amounts of electricity while emitting next to no carbon.This separates it from fossil fuels, which are consistent but dirty, and renewables, which are clean but weather dependent. Contrary to their apocalyptic reputation, nuclear power plants are relatively safe. Coal power is estimated to kill around 350 times as many people per terawatt-hour of energy produced, mostly from air pollution, compared to nuclear power. 
+
+Overall, nuclear energy seems a proper alternative energy that could be largely used in the future. However, there’re definitely disadvantages. And our group do research and analyze data, trying to figure out the possibility of popularizing the use of nuclear energy.
+
+
 
 ### 3.0 Research Questions
 1. How prevalent is nuclear energy in the world right now?
