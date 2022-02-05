@@ -68,7 +68,7 @@ Question 4’s goal is to determine if other forms of alternative energy (solar,
 ### 4.0 The Dataset
 For our project, we have identified several datasets that we can employ to help answer some of our research questions.
 
-####Datasets 1 and 2
+#### Datasets 1 and 2
 
 Our first two datasets come from this Kaggle link: [*Renewable vs Nuclear Energy generation (1965-)*](https://www.kaggle.com/donjoeml/energy-consumption-and-generation-in-the-globe?select=Primary-energy-consumption-from-fossilfuels-nuclear-renewables.csv)
 
@@ -84,7 +84,7 @@ Again, OWID collected the data for these datasets through reputable sources such
 
 **These first two datasets will help answer our research questions regarding the prevalence of nuclear reactors globally.**
 
-####Dataset 3
+#### Dataset 3
 
 Our next dataset also comes from OWID through one of their public github repositories [*CO2 Data*](https://github.com/owid/co2-data). **This dataset (owid-co2-data) contains over 20,000 rows and over 20 columns. The columns in this dataset contain information on different countries’ CO2 emissions** throughout the years, country GDP, as well as CO2 emissions by type of energy production, among other columns. The data in this source was compiled from the following sources:
 
@@ -95,7 +95,7 @@ Our next dataset also comes from OWID through one of their public github reposit
 
 With this dataset’s extensive amount of data on CO2 emissions by energy production type, **we can understand how nuclear energy stacks up against different types of energy production in terms of their effect on climate change and greenhouse gas emissions**. Specifically, this will help answer research questions 2 and 3.
 
-####Dataset 4
+#### Dataset 4
 
 For our last dataset, we have information regarding population exposure to nuclear reactors. The dataset was found on Kaggle at this link: [*population exposure to nuclear reactors*](https://www.kaggle.com/liananapalkova/nuclear-power-plants). **This data set (energy-pop-exposure-nuclear-plants-locations_plants) includes approximately 300 rows and 40+ columns**. Some of the features that this dataset include are region, country name, and plant location. There are also 30+ columns that detail the general/urban/rural population exposure to nuclear plants with certain vicinities throughout the years.
 
