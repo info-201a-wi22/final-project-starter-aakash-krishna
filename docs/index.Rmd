@@ -99,7 +99,7 @@ plot(chart2)
 plot(chart3)
 ```
 
-#Purpose and Insights
+# Purpose and Insights
 
 **Aggregate Table:** The above aggregate table summarizes global power plant data by energy source. We included this table in order to compare the usefulness of each energy source by understanding how widespread they are (in terms of number of power plants), as well as their efficiency and contribution to energy production. Not surprisingly, from the data we see that fossil fuels (Coal and Gas) are the energy sources with the largest contribution to the world's energy production. We also see that the most ubiquitous power plant energy source is solar energy with over 100 times the number of power plants than nuclear energy. However, we see that nuclear energy has the most efficient energy output, with its average power plant capacity being over 100 times that of solar and over double that of the second highest, coal. Hence, this table shows the potential benefits of focusing on nuclear energy in the long run as opposed to other forms of renewable energy.
 
