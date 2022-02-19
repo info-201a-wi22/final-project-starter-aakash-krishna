@@ -67,6 +67,8 @@ Some potential limitations include:
 
 # Summary Information Script
 
+
+
 ```{r}
 source("../source/Chart_1.R")
 source("../source/Chart_2.R")
@@ -76,6 +78,7 @@ source("../source/Summary_Info.R")
 
 ```
 
+Through our analysis, we found that the most common type of power plants across several different countries was `r summary_info$energy_source_with_most_number_of_power_plants `, while the most used energy source was . Our second chart revealed that was the largest emitter of co2 into the atmosphere, and that the median co2 emissions for countries excluding the US, China, India, Russia was . Lastly, we found that the country with the highest nuclear power usage was while the country with the highest nuclear ratio was . 
 
 # Aggregate Table Script
 ```{r}
