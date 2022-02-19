@@ -66,7 +66,7 @@ Some potential limitations include:
   * It is difficult to objectively say one form of generating energy is "more viable" than another. We will consider multiple factors such as effects on environment and energy generated, but declaring any form of energy to be overall better than another is a challenging task, and one in which it is difficult to remain entirely neutral.
 
 # Summary Information
-```{r, echo = FALSE}
+```{r, echo = FALSE, include = FALSE, message = FALSE, warnings = FALSE}
 source("../source/Chart_1.R")
 source("../source/Chart_2.R")
 source("../source/Chart_3.R")
@@ -79,7 +79,7 @@ source("../source/Summary_Info.R")
 Through our analysis, we found that the most common type of power plants across several different countries was `r summary_info$energy_source_with_most_number_of_power_plants `, while the most used energy source was `r summary_info$most_used_energy_source `. Our second chart revealed that was the largest emitter of co2 into the atmosphere was `r summary_info$country_max_emissions ` , and that the median co2 emissions for countries excluding the US, China, India, Russia was `r summary_info$country_median_emissions`. Lastly, we found that the country with the highest nuclear power usage was `r summary_info$country_max_nuclear_usage` while the country with the highest nuclear ratio was `r summary_info$country_highest_nuclear_ratio`. 
 
 # Aggregate Table
-```{r, echo = FALSE}
+```{r, echo = FALSE, include = FALSE, message = FALSE, warnings = FALSE}
 #install.packages("kableExtra")
 library("kableExtra")
 kable(aggregate_table) %>%
