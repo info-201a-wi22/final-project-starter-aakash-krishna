@@ -39,4 +39,19 @@ country_median_emissions <- country_median_emissions[[1]]
 summary_info$country_median_emissions <- country_median_emissions
 
 
+#Summary info for chart 1
 
+consumption_data_csv <- read.csv("../data/Primary-energy-consumption-from-fossilfuels-nuclear-renewables.csv")
+countries <- c("Brazil", "Mexico", "Pakistan", "Bangladesh", "Indonesia")
+
+summary_info$country_max_nuclear_usage <- consumption_data_csv %>%
+  filter(Entity %in% countries == TRUE) %>%
+  filter(Nuclear....sub.energy. == max(Nuclear....sub.energy., na.rm = TRUE)) %>%
+  pull(Entity)
+
+consumption_data_csv <- mutate(consumption_data_csv, ratio = Nuclear....sub.energy./Renewables....sub.energy.);
+
+summary_info$country_highest_nuclear_ratio <- consumption_data_csv %>%
+  filter(Entity %in% countries == TRUE) %>%
+  filter(ratio == max(ratio, na.rm = TRUE)) %>%
+  pull(Entity)
