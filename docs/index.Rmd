@@ -79,7 +79,7 @@ According to our calculations, the total number of cases were ** `r summary_info
 
 # Aggregate Table Script
 ```{r}
-install.packages("kableExtra")
+#install.packages("kableExtra")
 library("kableExtra")
 kable(aggregate_table) %>%
   kable_styling(bootstrap_options = "striped", full_width = F)
@@ -94,7 +94,9 @@ You can also embed plots, for example:
 #Chart 1
 plot(tabl)
 #Chart 2
-
+plot(chart2)
+#Chart 3
+plot(chart3)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
