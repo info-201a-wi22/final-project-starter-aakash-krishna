@@ -20,7 +20,7 @@ power_plant_capacity <- power_plant_data %>%
 power_plant_aggregate <- left_join(power_plant_capacity, power_plant_count,
                                    by = "primary_fuel") 
 
-ggplot(power_plant_aggregate, aes(fill=primary_fuel, 
+plot <- ggplot(power_plant_aggregate, aes(fill=primary_fuel, 
                                   y=total_capacity/number_of_plants, 
                                   x = primary_fuel)) + 
   geom_bar(position="stack", stat="identity") +
@@ -28,4 +28,6 @@ ggplot(power_plant_aggregate, aes(fill=primary_fuel,
   xlab("Energy Source") +
   ylab("Average Power Plant Capacity (MW)") + 
   labs(fill='Energy Source') 
+
+plot
 
