@@ -78,7 +78,7 @@ source("../source/Summary_Info.R")
 
 ```
 
-Through our analysis, we found that the most common type of power plants across several different countries was `r summary_info$energy_source_with_most_number_of_power_plants `, while the most used energy source was . Our second chart revealed that was the largest emitter of co2 into the atmosphere, and that the median co2 emissions for countries excluding the US, China, India, Russia was . Lastly, we found that the country with the highest nuclear power usage was while the country with the highest nuclear ratio was . 
+Through our analysis, we found that the most common type of power plants across several different countries was `r summary_info$energy_source_with_most_number_of_power_plants `, while the most used energy source was `r summary_info$most_used_energy_source `. Our second chart revealed that was the largest emitter of co2 into the atmosphere was `r summary_info$country_max_emissions ` , and that the median co2 emissions for countries excluding the US, China, India, Russia was `r summary_info$country_median_emissions`. Lastly, we found that the country with the highest nuclear power usage was `r summary_info$country_max_nuclear_usage` while the country with the highest nuclear ratio was `r summary_info$country_highest_nuclear_ratio`. 
 
 # Aggregate Table Script
 ```{r}
