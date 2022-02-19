@@ -8,7 +8,7 @@ consumption_data <- read.csv("../data/Primary-energy-consumption-from-fossilfuel
 
 data <- consumption_data %>%
   filter(Entity == "Bangladesh" | Entity == "Brazil" | Entity == "China" |
-           Entity == "India" | Entity == "Indonesia" | Entity == "Mexico" |
+           Entity == "India" | Entity == "Mexico" |
            Entity == "Nigeria" |Entity == "Pakistan" |Entity == "Russia" |
            Entity == "United States") %>%
   select("Entity", "Year", "Renewables....sub.energy.", 
