@@ -68,8 +68,7 @@ Some potential limitations include:
 # Summary Information Script
 
 
-
-```{r}
+```{r, echo = FALSE}
 source("../source/Chart_1.R")
 source("../source/Chart_2.R")
 source("../source/Chart_3.R")
@@ -81,7 +80,7 @@ source("../source/Summary_Info.R")
 Through our analysis, we found that the most common type of power plants across several different countries was `r summary_info$energy_source_with_most_number_of_power_plants `, while the most used energy source was `r summary_info$most_used_energy_source `. Our second chart revealed that was the largest emitter of co2 into the atmosphere was `r summary_info$country_max_emissions ` , and that the median co2 emissions for countries excluding the US, China, India, Russia was `r summary_info$country_median_emissions`. Lastly, we found that the country with the highest nuclear power usage was `r summary_info$country_max_nuclear_usage` while the country with the highest nuclear ratio was `r summary_info$country_highest_nuclear_ratio`. 
 
 # Aggregate Table Script
-```{r}
+```{r, echo = FALSE}
 #install.packages("kableExtra")
 library("kableExtra")
 kable(aggregate_table) %>%
@@ -101,3 +100,18 @@ plot(chart2)
 plot(chart3)
 ```
 
+#Purpose and Insights
+
+**Aggregate Table:** The above aggregate table summarizes global power plant data by energy source. We included this table in order to compare the usefulness of each energy source by understanding how widespread they are (in terms of number of power plants), as well as their efficiency and contribution to energy production. Not surprisingly, from the data we see that fossil fuels (Coal and Gas) are the energy sources with the largest contribution to the world's energy production. We also see that the most ubiquitous power plant energy source is solar energy with over 100 times the number of power plants than nuclear energy. However, we see that nuclear energy has the most efficient energy output, with its average power plant capacity being over 100 times that of solar and over double that of the second highest, coal. Hence, this table shows the potential benefits of focusing on nuclear energy in the long run as opposed to other forms of renewable energy.
+
+**Chart 1:** We wanted to measure the extent to which larger countries rely on nuclear energy today, so we used a Kaggle data set measuring percentages with regards to types of energy used in order to compare these countries.
+
+Russia and the United States are the clear leaders when it comes to nuclear energy and in recent years have even generated as much/more energy for nuclear energy than from other renewable sources like solar and wind, with the US generating twice as much nuclear energy than other renewables in the time period between 2000-2005.
+
+**Chart 2:** In order to better understand the actual impact of each countries’ CO2 emissions on total emissions, we utilized data from the Owid CO2 Emissions dataset. 
+
+After plotting the CO2 emissions of each country in the subset by year, we found that out of a reported ~30 billion metric tons, the top 4 countries (China, the US, India, and Russia) produce ~50% of the total global carbon emissions. This indicates that in order to effectively reduce climate change, a large-scale adoption of nuclear energy is more needed in highly populated countries which have high power consumption needs.
+
+**Chart 3:** For the purpose of comparing the efficiency of various power sources in generating energy, we used a Kaggle data set detailing power plants around the world with the type and amount of energy they produce.
+
+The results showed that nuclear energy is easily the most efficient form of energy generation, more than doubling the average capacity of its closest competitor, coal, and reaching more than 100 times the power generating capacity of solar energy. This shows that efforts made towards developing safe nuclear plants would help countries generate much more power in the long run as opposed to current solutions.
