@@ -19,7 +19,7 @@ data <- consumption_data %>%
 tabl <- data %>% 
   ggplot(aes(x = Year, y = Nuclear....sub.energy., color = Entity, size = ratio)) + 
   geom_point(alpha=0.7) +
-  scale_size(range = c(1.2, 16.5), name="Nuclear/Renewable Ratio") +
+  scale_size(range = c(1, 12), name="Nuclear/Renewable Ratio") +
   ggtitle("Changes in Usage of Nuclear Energy") + 
   xlab("Year") +
   ylab("Percent of Energy from Nuclear") +
