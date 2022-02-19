@@ -31,7 +31,7 @@ exclude <- c("World", "Asia", "Africa", "North America", "South America", "Europ
 
 summary_stat_2 <- owid_data_csv %>%
   filter(country %in% continents != TRUE) %>%
-  filter(str_detect(owid_data_csv$country, exclude) != TRUE) %>%
+  filter(country %in% exclude != TRUE) %>%
   summarize(median(co2, na.rm = TRUE)) 
 
 summary_info$country_median_emissions <- country_median_emissions[[1]]

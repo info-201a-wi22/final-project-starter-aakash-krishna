@@ -75,7 +75,7 @@ source("../source/Aggregate_Table.R")
 source("../source/Summary_Info.R")
 
 ```
-According to our calculations, the total number of cases were ** `r summary_info$most_used_energy_source` **
+
 
 # Aggregate Table Script
 ```{r}
