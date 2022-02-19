@@ -2,22 +2,27 @@ library(dplyr)
 library(ggplot2)
 library(plotly)
 
-setwd("D:/university/INFO201/Assignments/final-project-starter-aakash-krishna")
+setwd(".")
 
-consumption_data <- read.csv("data/Primary-energy-consumption-from-fossilfuels-nuclear-renewables.csv")
+consumption_data <- read.csv("../data/Primary-energy-consumption-from-fossilfuels-nuclear-renewables.csv")
 
-tabl <- consumption_data %>%
-  filter(Entity == "Bangladesh" | Entity == "Brazil" | Entity == "China" | Entity == "India" | Entity == "Indonesia" | Entity == "Mexico" |Entity == "Nigeria" |Entity == "Pakistan" |Entity == "Russia" |Entity == "United States") %>%
-  select("Entity", "Year", "Renewables....sub.energy." , "Nuclear....sub.energy.") %>%
-  
-  mutate(ratio = Nuclear....sub.energy./Renewables....sub.energy.) %>%
-  mutate(text = paste0("Country: ", Entity, "\nYear: ", Year, "\nRatio of nuclear energy to other renewable energies used: ", ratio)) %>%
-  
-  ggplot( aes(x = Year, y = Nuclear....sub.energy., size = ratio, color = Entity)) +
+data <- consumption_data %>%
+  filter(Entity == "Bangladesh" | Entity == "Brazil" | Entity == "China" |
+           Entity == "India" | Entity == "Indonesia" | Entity == "Mexico" |
+           Entity == "Nigeria" |Entity == "Pakistan" |Entity == "Russia" |
+           Entity == "United States") %>%
+  select("Entity", "Year", "Renewables....sub.energy.", 
+         "Nuclear....sub.energy.") %>%
+  mutate(ratio = ifelse(Renewables....sub.energy. == 0, 0, Nuclear....sub.energy./Renewables....sub.energy.)) %>%
+  mutate(text = paste0("Country: ", Entity, "\nYear: ", Year, "\nRatio of nuclear energy to other renewable energies used: ", ratio))
+
+tabl <- data %>% 
+  ggplot(aes(x = Year, y = Nuclear....sub.energy., color = Entity, size = ratio)) + 
   geom_point(alpha=0.7) +
-  scale_size(range = c(1.4, 19), name="Nuclear/Renewable Ratio") +
-  scale_color_viridis_d(alpha = 1, begin = 0, end = 1, space = "Lab", na.value = "grey50", guide = "colorsteps")
-  theme(legend.title=element_text("Changes in Usage of Nuclear Energy"))
+  scale_size(range = c(1.4, 15), name="Nuclear/Renewable Ratio") +
+  ggtitle("Changes in Usage of Nuclear Energy") + 
+  xlab("Year") +
+  ylab("Percent of Energy from Nuclear") +
+  labs(color='Country') 
 
-tabl3 <-ggplotly(tabl, tooltip = text)
-tabl3
+tabl
