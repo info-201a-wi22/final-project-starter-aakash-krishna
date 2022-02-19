@@ -16,12 +16,13 @@ by_country_df <- owid_data_csv %>%
 
   select(country, year, co2)
 
-ggplot(data = by_country_df) +
+chart2 <- ggplot(data = by_country_df) +
   geom_line(
     mapping = aes(x = year, y = co2, color = country), size = 1.5)  +
   ggtitle("CO2 Emissions of Highly Populated Countries (100m+) by Year") +
   ylab("CO2 Emissions (in million metric tons)") +
   xlab("Year")
+
 
 
 View(by_country_df)
