@@ -16,3 +16,22 @@ summary_info$most_used_energy_source <- power_plant_data %>%
   summarise(total_capacity = sum(capacity_mw)) %>% 
   filter(total_capacity == max(total_capacity)) %>% 
   pull(primary_fuel)
+
+#summary info for chart 2
+owid_data_csv <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-aakash-krishna/main/data/owid-co2-data.csv")
+continents <- c("Asia", "Africa", "North America", "South America", "Europe", "Australia")
+
+country_max_emissions <- owid_data_csv %>%
+  filter(country %in% continents != TRUE) %>%
+  filter(country != "World") %>%
+  filter(co2 == max(co2, na.rm = TRUE)) %>%
+  pull(country)
+
+exclude <- c("World", "Asia", "Africa", "North America", "South America", "Europe", "Australia", "United States", "China", "Russia", "India")
+
+summary_stat_2 <- owid_data_csv %>%
+  filter(country %in% continents != TRUE) %>%
+  filter(str_detect(owid_data_csv$country, exclude) != TRUE) %>%
+  summarize(median(co2, na.rm = TRUE)) 
+
+country_median_emissions <- country_median_emissions[[1]]
