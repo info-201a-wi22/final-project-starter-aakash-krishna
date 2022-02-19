@@ -34,6 +34,9 @@ summary_stat_2 <- owid_data_csv %>%
   filter(country %in% exclude != TRUE) %>%
   summarize(median(co2, na.rm = TRUE)) 
 
-summary_info$country_median_emissions <- country_median_emissions[[1]]
+country_median_emissions <- country_median_emissions[[1]]
+
+summary_info$country_median_emissions <- country_median_emissions
+
 
 
