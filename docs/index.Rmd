@@ -74,12 +74,11 @@ source("../source/Aggregate_Table.R")
 source("../source/Summary_Info.R")
 
 ```
-
-
 Through our analysis, we found that the most common type of power plants across several different countries was `r summary_info$energy_source_with_most_number_of_power_plants `, while the most used energy source was `r summary_info$most_used_energy_source `. Our second chart revealed that was the largest emitter of co2 into the atmosphere was `r summary_info$country_max_emissions ` , and that the median co2 emissions for countries excluding the US, China, India, Russia was `r summary_info$country_median_emissions`. Lastly, we found that the country with the highest nuclear power usage was `r summary_info$country_max_nuclear_usage` while the country with the highest nuclear ratio was `r summary_info$country_highest_nuclear_ratio`. 
 
+
 # Aggregate Table
-```{r, echo = FALSE, include = FALSE, message = FALSE, warnings = FALSE}
+```{r, echo = FALSE, message = FALSE, warnings = FALSE}
 #install.packages("kableExtra")
 library("kableExtra")
 kable(aggregate_table) %>%
@@ -87,8 +86,9 @@ kable(aggregate_table) %>%
 
 ```
 
-## Charts 1-3
+**Aggregate Table:** The above aggregate table summarizes global power plant data by energy source. We included this table in order to compare the usefulness of each energy source by understanding how widespread they are (in terms of number of power plants), as well as their efficiency and contribution to energy production. Not surprisingly, from the data we see that fossil fuels (Coal and Gas) are the energy sources with the largest contribution to the world's energy production. We also see that the most ubiquitous power plant energy source is solar energy with over 100 times the number of power plants than nuclear energy. However, we see that nuclear energy has the most efficient energy output, with its average power plant capacity being over 100 times that of solar and over double that of the second highest, coal. Hence, this table shows the potential benefits of focusing on nuclear energy in the long run as opposed to other forms of renewable energy.   
 
+## Charts 1-3
 
 ```{r pressure, echo=FALSE}
 #Chart 1
@@ -100,8 +100,6 @@ plot(chart3)
 ```
 
 # Purpose and Insights
-
-**Aggregate Table:** The above aggregate table summarizes global power plant data by energy source. We included this table in order to compare the usefulness of each energy source by understanding how widespread they are (in terms of number of power plants), as well as their efficiency and contribution to energy production. Not surprisingly, from the data we see that fossil fuels (Coal and Gas) are the energy sources with the largest contribution to the world's energy production. We also see that the most ubiquitous power plant energy source is solar energy with over 100 times the number of power plants than nuclear energy. However, we see that nuclear energy has the most efficient energy output, with its average power plant capacity being over 100 times that of solar and over double that of the second highest, coal. Hence, this table shows the potential benefits of focusing on nuclear energy in the long run as opposed to other forms of renewable energy.
 
 **Chart 1:** We wanted to measure the extent to which larger countries rely on nuclear energy today, so we used a Kaggle data set measuring percentages with regards to types of energy used in order to compare these countries.
 
