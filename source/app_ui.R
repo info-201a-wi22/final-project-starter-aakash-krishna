@@ -13,7 +13,7 @@ introPage <- tabPanel("Introduction",
                             Coal and gas power plants that produce most of the power in the world (especially in the US where they account for 
                             ~80% of the electricity production) also produce millions of tons of CO2, which makes up the highest portion of 
                             greenhouse gases in the atmosphere. Livestock around the world emit millions of tons of Methane per year which is 
-                            said to be \"25 times more potent than CO2\" (https://www.epa.gov/gmi/importance-methane) according to the EPA. 
+                            said to be \"25 times more potent than CO2\" according to the", tags$a(href="https://www.epa.gov/gmi/importance-methane", "EPA"),". 
                             As every year that CO2 emissions continue to increase, global warming becomes a much more pressing issue. And as the 
                             present methods of renewable energy are plagued with problems such as inefficiency, un-reusable windmills, power storage, 
                             and general complexity and cost to setup, an alternative power source to generate electricity is urgently needed."),
@@ -26,8 +26,8 @@ introPage <- tabPanel("Introduction",
                             our planet. "),
                           
                           p("Through our research, we identified major benefits to switch to nuclear power plants. Two of these are higher efficiency and more 
-                            importantly, no CO2 emissions. As nuclear power used radioactive materials and water, the only gas it emits is steam 
-                            (https://www.cnet.com/news/how-nuclear-power-plants-could-help-solve-climate-crisis), which is in no way harmful to the environment. 
+                            importantly, no CO2 emissions. As nuclear power used radioactive materials and water, the only gas it emits is steam", 
+                            tags$a(href="https://www.cnet.com/news/how-nuclear-power-plants-could-help-solve-climate-crisis", "(Nuclear power is clean and safe. Why aren't we using more of it?)"),", which is in no way harmful to the environment. 
                             And regarding the harmful radioactive waste nuclear power plants are purported to create, the little waste they do create are highly 
                             exaggerated as it is low in amount and stored in safe barrels away from human life. In order to solidify the argument on a change to 
                             nuclear power, we analyzed several data sets to learn more about CO2 emissions as well as how efficient nuclear reactors are compared 
@@ -155,7 +155,7 @@ summaryPage <- tabPanel("Takeaways",
                            emissions and largely overshadow many other countries in total emissions (They make up 
                            more than half of the world's total emissions!)"),
                           img(src='https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-aakash-krishna/main/docs/summary1.png'),
-                          p("(https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data)"),
+                          p(tags$a(href="https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data", "(EPA, Global Greenhouse Gas Emissions Data)")),
                           p("Lastly, a very important insight we found is that nuclear power is much more efficient compared 
                            to other forms of power generation (coal, gas, renewables such as solar, hydro, etc.). By 
                            aggregating power plant efficiency/capacity data from power plants around the world we found 
@@ -195,9 +195,9 @@ reportPage <- tabPanel("Report",
                          h3("2.0: Design Situation"),
                          p("It is an unchangeable fact the consuming and converting natural resources is the basic condition of our lives. However, human beings have never stopped acquiring natural resources. Instead of focusing on sustainable practices, we have for a long time focused only on consumption. In  past agricultural societies people mainly relied on natural resources such as land, sunshine and water to survive. However, with the advent of the Industrial revolution, extracting the mineral resources buried underground and putting them through industrial processes to create new materials and energy has become the norm. At the same time, this industrialization has also increased the development and utilization of other natural resources. However, with these normalized industrial practices have also brought about negative consequences."),
 
-                         p("When the speed of human acquisition of natural resources exceeds the speed of supply, regeneration and proliferation of natural resources, the problem of shortage of natural resources will appear. According to the article [*Global production distribution of non-renewable energy resources 2008-2018*](https://www.statista.com/statistics/263232/global-production-of-non-renewable-energy-resources/#statisticContainer) published by N. Sönnichsen, Dec 22, 2021, which shows the distribution of selected energy carriers as a share of non-renewable energy production worldwide from 2007 to 2018. We can see that petroleum, hard coal and natural gas take up more than 90%."),
+                         p("When the speed of human acquisition of natural resources exceeds the speed of supply, regeneration and proliferation of natural resources, the problem of shortage of natural resources will appear. According to the article", tags$a(href="https://www.statista.com/statistics/263232/global-production-of-non-renewable-energy-resources/#statisticContainer"), ", the distribution of selected energy carriers as a share of non-renewable energy production worldwide from 2007 to 2018. We can see that petroleum, hard coal and natural gas take up more than 90%."),
 
-                         p("Besides the problem of depletion, overloaded use of non-renewable resources could also cause serious environmental problems. For example, one impact of using non-renewable energy sources is the emission of greenhouse gases, in particular carbon dioxide and methane, which contribute to climate change, according to the article [*Harmful Effects of Non-Renewable Resources on the Environment*](https://greentumble.com/harmful-effects-of-non-renewable-resources-on-the-environment/) published by Greentumble in Feb 23, 2017:"),
+                         p("Besides the problem of depletion, overloaded use of non-renewable resources could also cause serious environmental problems. For example, one impact of using non-renewable energy sources is the emission of greenhouse gases, in particular carbon dioxide and methane, which contribute to climate change, according to the article", tags$a(href="https://greentumble.com/harmful-effects-of-non-renewable-resources-on-the-environment/", "Harmful Effects of Non-Renewable Resources on the Environment"),":"),
 
                          p("> Coal is considered the worst emitter of carbon dioxide. In the US, CO2 emissions from the electric power sector calculated in 2015 indicate that 71 percent were attributable to coal. While for example natural gas produced around 28 percent of carbon dioxide emissions. Indeed, natural gas emits a lot less carbon dioxide, specifically 50 to 60 percent less compared to coal, and it also emits 15 to 20 percent fewer heat-trapping gases compared to gasoline when used to power a vehicle.However, that does not mean that natural gas can help mitigate climate change, as drilling and extracting natural gas from wells results in the leakage of methane, which is a much more potent greenhouse gas - it is 34 times stronger than CO2 in terms of its potential for trapping heat."),
 
@@ -207,7 +207,7 @@ reportPage <- tabPanel("Report",
 
                          p("> \"As new power reactors come online and others are retired, proper supply and management of uranium will be a critical factor in energy supply in the coming decades,\" said Adrienne Hanly, uranium resources specialist at the IAEA. \"Uraniumbased fuel is expected to remain a basic, reliable source for low-carbon nuclear power. How we utilize this fuel will greatly depend on the development of new technologies and strategies for sustainable resource management.\""),
                           
-                         p("Nuclear power also causes less damage to the climate. A journalist Daniel Van Boom says this in his article [*How Nuclear Power Plants Could Help Solve the Climate Crisis*](https://www.cnet.com/news/how-nuclear-power-plants-could-help-solve-climate-crisis/) on Nov. 16, 2021."),
+                         p("Nuclear power also causes less damage to the climate. A journalist Daniel Van Boom says this in his article,", tags$a(href="https://www.cnet.com/news/how-nuclear-power-plants-could-help-solve-climate-crisis/", "Nuclear power is clean and safe. Why aren't we using more of it?")),
                          
                          p("> Though the word evokes images of landscapes pulverized by atomic calamity -- Hiroshima, Chernobyl, Fukushima -- proponents like Detering and his colleague Eric Dawson point out that nuclear power produces huge amounts of electricity while emitting next to no carbon.This separates it from fossil fuels, which are consistent but dirty, and renewables, which are clean but weather dependent. Contrary to their apocalyptic reputation, nuclear power plants are relatively safe. Coal power is estimated to kill around 350 times as many people per terawatt-hour of energy produced, mostly from air pollution, compared to nuclear power."),
 
