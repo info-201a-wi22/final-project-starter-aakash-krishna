@@ -44,7 +44,7 @@ introPage <- tabPanel("Introduction",
                                     of nuclear power plants compared to other types of power generation. ")
                           ),
                           
-                          img(src='https://github.com/info-201a-wi22/final-project-starter-aakash-krishna/blob/087fe370ecd080db88b64a506c91bff47e29b8d1/docs/intropic1.jpg')
+                          img(src='https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-aakash-krishna/main/docs/intropic1.jpg')
                       )
 )
 
@@ -133,7 +133,7 @@ summaryPage <- tabPanel("Takeaways",
                            Mexico. Coupled with our second key insight of how China, US, and India are leaders in CO2 
                            emissions and largely overshadow many other countries in total emissions (They make up 
                            more than half of the world's total emissions!)"),
-                          img(src='../docs/summary1.png'),
+                          img(src='https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-aakash-krishna/main/docs/summary1.png'),
                           p("(https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data)"),
                           p("Lastly, a very important insight we found is that nuclear power is much more efficient compared 
                            to other forms of power generation (coal, gas, renewables such as solar, hydro, etc.). By 
@@ -141,7 +141,7 @@ summaryPage <- tabPanel("Takeaways",
                            that in terms of Capacity in MW, Nuclear Power plants can reach up to 2000+ MW, the highest among 
                            the different capacities for each type of power generation plant. This is also about 1000 MW more 
                            than coal power plants. "),
-                          img(src='../docs/summary2.png'),
+                          img(src='https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-aakash-krishna/main/docs/summary2.png'),
                           p("The implications of this data are extremely important. What it indicates is that not only do we 
                            need an adoption of a nuclear power plant network to sustainably produce power, we also need 
                            coordination and cooperation amongst countries in order to achieve that network. As The largest 
