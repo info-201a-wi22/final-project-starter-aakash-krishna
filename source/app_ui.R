@@ -189,10 +189,10 @@ reportPage <- tabPanel("Report",
                          h3("Abstract"),
                          p("With the threat of climate change seemingly looming over us constantly, it becomes more and more important by the day to find solutions to reduce the amount of greenhouse gases that contribute to rising temperatures. One of the main contributing greenhouse gases is CO2. As CO2 makes up a large part of greenhouse gases that are causing rising temperatures, reducing its content in the atmosphere would help to offset the adverse effects of climate change. In order to identify a reliable alternative energy source that would both have sufficient energy output and low emissions, we analyzed several data set. Through our analysis, we observed largest CO2 emissions by country, efficiency of nuclear power plants, as well as current prevalence of nuclear energy in the world today. "),
                          
-                         h3("Introduction"),
+                         h3("1.0: Introduction"),
                          p("Due to rising temperatures in recent decades, many geological and ecological disasters have been occurring with higher frequencies. These rising temperatures are a consequence of large amounts of greenhouses gases being trapped in the atmosphere. Of these gases, CO2 has been a large determinant in trapping more heat from the sun, resulting in global warming. Much of the CO2 emitted into our atmosphere is caused by power generation from coal and natural gas factories. If global warming is to be slowed, let alone stopped, it is imperative that low CO2 emitting alternative power source is adopted. "),
                          
-                         h3("Design Situation"),
+                         h3("2.0: Design Situation"),
                          p("It is an unchangeable fact the consuming and converting natural resources is the basic condition of our lives. However, human beings have never stopped acquiring natural resources. Instead of focusing on sustainable practices, we have for a long time focused only on consumption. In  past agricultural societies people mainly relied on natural resources such as land, sunshine and water to survive. However, with the advent of the Industrial revolution, extracting the mineral resources buried underground and putting them through industrial processes to create new materials and energy has become the norm. At the same time, this industrialization has also increased the development and utilization of other natural resources. However, with these normalized industrial practices have also brought about negative consequences."),
 
                          p("When the speed of human acquisition of natural resources exceeds the speed of supply, regeneration and proliferation of natural resources, the problem of shortage of natural resources will appear. According to the article [*Global production distribution of non-renewable energy resources 2008-2018*](https://www.statista.com/statistics/263232/global-production-of-non-renewable-energy-resources/#statisticContainer) published by N. Sönnichsen, Dec 22, 2021, which shows the distribution of selected energy carriers as a share of non-renewable energy production worldwide from 2007 to 2018. We can see that petroleum, hard coal and natural gas take up more than 90%."),
@@ -213,7 +213,7 @@ reportPage <- tabPanel("Report",
 
                          p("Overall, nuclear energy seems to be an alternative energy that could be largely used in the future mainly due to its near zero CO2 emissions. Through our analysis we also found how Nuclear Energy can be very efficient compared to other sources of energy."),
                          
-                         h3("Research Questions"),
+                         h3("3.0: Research Questions"),
                          p("We ask these questions in hopes of gaining a better understanding of the viability of nuclear energy as an effective deterrent to climate change."),
                          
                          tags$ol(
@@ -222,14 +222,14 @@ reportPage <- tabPanel("Report",
                            tags$li("How does nuclear energy compare to other forms of alternative energy? Question 4's goal is to determine if other forms of alternative energy (solar, wind, etc.) are more or less viable than nuclear energy. One way we will answer this is by comparing the energy production of each form of energy."),
                          ),
                   
-                         h3("Datasets"),
+                         h3("4.0: Datasets"),
                          tags$ol(
                             tags$li("Our first chart utilized the Primary-energy-consumption-from-fossilfuels-nuclear-renewables data set. Using this data set we plotted nuclear energy output over several decades of different countries and found the top 10 countries that generated the most nuclear energy. As we used the percent change in nuclear energy, we found that the among the top countries, the US, Russia, and Indonesia have seen large growth in the amount of energy provided by nuclear power plants. The data set was narrowed down to 3 columns and several thousand rows in order to show the appropriate data. "),
                             tags$li("Our second chart utilized the owid co2 data set. This extensive data set had more than 15k+ rows as well as more than 20 columns. We chose 3 columns to show appropriate data and plot Co2 emissions for country by year. Specifically we used the co2 (co2 emitted in million metric tons), year, and country columns. In order to show an appropriate range, we filtered the dataset to countries with populations over 100 million. This ensured that a large multitude of countries that had near zero/low co2 emissions weren't included. "),
                             tags$li("For our last chart, we used the global_power_plant_database_last csv. This data set had more than 15+ columns and upwards of 20k rows. We looked at the primary fuel source and country column in order to determine aggregate counts of different type of energy plants.")
                          ),
                          
-                         h3("Findings"),
+                         h3("5.0: Findings"),
                          p("We asked the following questions in hopes of gaining a better understanding of the viability of nuclear energy as an effective deterrent to climate change.:"),
                          tags$ol(
                            tags$li(em("How prevalent is nuclear energy in the world right now?"), " Question 1's goal is to inform 
@@ -261,7 +261,7 @@ reportPage <- tabPanel("Report",
                                    the typical power production plants we have today whether they are renewable or non-renewable. ")
                          ),
                          
-                         h3("Discussion"),
+                         h3("6.0: Discussion"),
                          p("Answering the questions we posed to ourselves provided us with implications that could be drawn from the 
                            results to said questions."),
                          tags$ul(
