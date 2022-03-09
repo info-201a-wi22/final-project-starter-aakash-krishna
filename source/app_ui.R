@@ -34,17 +34,17 @@ introPage <- tabPanel("Introduction",
                             to other types of power generation. "),
                           
                           p("The following are datasets we analyzed:"),
-                          tags$ul(
-                            tags$li("1.	Primary-energy-consumption-from-fossilfuels-nuclear-renewables - In order to understand which countries are switching to 
+                          tags$ol(
+                            tags$li("Primary-energy-consumption-from-fossilfuels-nuclear-renewables - In order to understand which countries are switching to 
                                     nuclear power generation, we plotted the percent change of nuclear power for several countries over time. The data for this set 
                                     was provided by OWID."),
-                            tags$li("2.	owid-co2-data - To identify which countries should prioritize nuclear power and move away from coal and gas power production, 
+                            tags$li("owid-co2-data - To identify which countries should prioritize nuclear power and move away from coal and gas power production, 
                                     we used this data set to see which countries have produced the most CO2 emissions over time. The data for this set was provided by OWID."),
-                            tags$li("3.	global_power_plant_database_last - Lastly, we used this data set provided by OWID through a Kaggle publication to analyze the efficiency 
+                            tags$li("global_power_plant_database_last - Lastly, we used this data set provided by OWID through a Kaggle publication to analyze the efficiency 
                                     of nuclear power plants compared to other types of power generation. ")
                           ),
                           
-                          img(src='../docs/intropic1.jpg')
+                          img(src='https://github.com/info-201a-wi22/final-project-starter-aakash-krishna/blob/087fe370ecd080db88b64a506c91bff47e29b8d1/docs/intropic1.jpg')
                       )
 )
 
@@ -159,7 +159,62 @@ summaryPage <- tabPanel("Takeaways",
 
 reportPage <- tabPanel("Report",
                        mainPanel(
-                         h2("Abstract")
+                         h2("Title: Analysis of Nuclear Energy"),
+                         h2("Authors: Aakash Krishna, Ajay Pai, Zohaib Javed"),
+                         h2("Date: 3-9-22"),
+                         h2("Affiliation: INFO-201: Technical Foundations of Informatics - The Information School - University of Washington"),
+                         h2("Keywords: nuclear energy; climate change; greenhouse gas; alternative energy source"),
+                         
+                         h3("Abstract"),
+                         p("With the threat of climate change seemingly looming over us constantly, it becomes more and more important by the day to find solutions to reduce the amount of greenhouse gases that contribute to rising temperatures. One of the main contributing greenhouse gases is CO2. As CO2 makes up a large part of greenhouse gases that are causing rising temperatures, reducing its content in the atmosphere would help to offset the adverse effects of climate change. In order to identify a reliable alternative energy source that would both have sufficient energy output and low emissions, we analyzed several data set. Through our analysis, we observed largest CO2 emissions by country, efficiency of nuclear power plants, as well as current prevalence of nuclear energy in the world today. "),
+                         
+                         h3("Introduction"),
+                         p("Due to rising temperatures in recent decades, many geological and ecological disasters have been occurring with higher frequencies. These rising temperatures are a consequence of large amounts of greenhouses gases being trapped in the atmosphere. Of these gases, CO2 has been a large determinant in trapping more heat from the sun, resulting in global warming. Much of the CO2 emitted into our atmosphere is caused by power generation from coal and natural gas factories. If global warming is to be slowed, let alone stopped, it is imperative that low CO2 emitting alternative power source is adopted. "),
+                         
+                         h3("Design Situation"),
+                         p("It is an unchangeable fact the consuming and converting natural resources is the basic condition of our lives. However, human beings have never stopped acquiring natural resources. Instead of focusing on sustainable practices, we have for a long time focused only on consumption. In  past agricultural societies people mainly relied on natural resources such as land, sunshine and water to survive. However, with the advent of the Industrial revolution, extracting the mineral resources buried underground and putting them through industrial processes to create new materials and energy has become the norm. At the same time, this industrialization has also increased the development and utilization of other natural resources. However, with these normalized industrial practices have also brought about negative consequences."),
+
+                         p("When the speed of human acquisition of natural resources exceeds the speed of supply, regeneration and proliferation of natural resources, the problem of shortage of natural resources will appear. According to the article [*Global production distribution of non-renewable energy resources 2008-2018*](https://www.statista.com/statistics/263232/global-production-of-non-renewable-energy-resources/#statisticContainer) published by N. Sönnichsen, Dec 22, 2021, which shows the distribution of selected energy carriers as a share of non-renewable energy production worldwide from 2007 to 2018. We can see that petroleum, hard coal and natural gas take up more than 90%."),
+
+                         p("Besides the problem of depletion, overloaded use of non-renewable resources could also cause serious environmental problems. For example, one impact of using non-renewable energy sources is the emission of greenhouse gases, in particular carbon dioxide and methane, which contribute to climate change, according to the article [*Harmful Effects of Non-Renewable Resources on the Environment*](https://greentumble.com/harmful-effects-of-non-renewable-resources-on-the-environment/) published by Greentumble in Feb 23, 2017:"),
+
+                         p("> Coal is considered the worst emitter of carbon dioxide. In the US, CO2 emissions from the electric power sector calculated in 2015 indicate that 71 percent were attributable to coal. While for example natural gas produced around 28 percent of carbon dioxide emissions. Indeed, natural gas emits a lot less carbon dioxide, specifically 50 to 60 percent less compared to coal, and it also emits 15 to 20 percent fewer heat-trapping gases compared to gasoline when used to power a vehicle.However, that does not mean that natural gas can help mitigate climate change, as drilling and extracting natural gas from wells results in the leakage of methane, which is a much more potent greenhouse gas - it is 34 times stronger than CO2 in terms of its potential for trapping heat."),
+
+                         p("The concerns about greenhouse gas emissions and climate change are cross-cutting, and the main resources humans are using is limited. Therefore,  it is necessary to look at alternative energy, our group's focus being on nuclear energy."),
+
+                         p("First, the uranium is the main resource used in nuclear power generation. This element might be the key factor to the sustainable development in the future."),
+
+                         p("> \"As new power reactors come online and others are retired, proper supply and management of uranium will be a critical factor in energy supply in the coming decades,\" said Adrienne Hanly, uranium resources specialist at the IAEA. \"Uraniumbased fuel is expected to remain a basic, reliable source for low-carbon nuclear power. How we utilize this fuel will greatly depend on the development of new technologies and strategies for sustainable resource management.\""),
+                          
+                         p("Nuclear power also causes less damage to the climate. A journalist Daniel Van Boom says this in his article [*How Nuclear Power Plants Could Help Solve the Climate Crisis*](https://www.cnet.com/news/how-nuclear-power-plants-could-help-solve-climate-crisis/) on Nov. 16, 2021."),
+                         
+                         p("> Though the word evokes images of landscapes pulverized by atomic calamity -- Hiroshima, Chernobyl, Fukushima -- proponents like Detering and his colleague Eric Dawson point out that nuclear power produces huge amounts of electricity while emitting next to no carbon.This separates it from fossil fuels, which are consistent but dirty, and renewables, which are clean but weather dependent. Contrary to their apocalyptic reputation, nuclear power plants are relatively safe. Coal power is estimated to kill around 350 times as many people per terawatt-hour of energy produced, mostly from air pollution, compared to nuclear power."),
+
+                         p("Overall, nuclear energy seems to be an alternative energy that could be largely used in the future mainly due to its near zero CO2 emissions. Through our analysis we also found how Nuclear Energy can be very efficient compared to other sources of energy."),
+                         
+                         h3("Research Questions"),
+                         p("We ask these questions in hopes of gaining a better understanding of the viability of nuclear energy as an effective deterrent to climate change."),
+                         
+                         tags$ol(
+                           tags$li("How prevalent is nuclear energy in the world right now? Question 1's goal is to inform the rest of our analysis by creating the necessary context about the world's current nuclear energy production. We will answer this by looking at data on each country's nuclear energy production, the number of power plants in each country, etc..."),
+                           tags$li("How does nuclear energy contribute to climate change? Question 2's goal is to question the extent at which nuclear energy benefits or harms the climate. We will answer this by looking at data on greenhouse gas emissions from nuclear power plants as well as comparing climate data and nuclear power plant data."),
+                           tags$li("How does nuclear energy compare to other forms of alternative energy? Question 4's goal is to determine if other forms of alternative energy (solar, wind, etc.) are more or less viable than nuclear energy. One way we will answer this is by comparing the energy production of each form of energy."),
+                         ),
+                  
+                         h3("Datasets"),
+                         tags$ol(
+                            tags$li("Our first chart utilized the Primary-energy-consumption-from-fossilfuels-nuclear-renewables data set. Using this data set we plotted nuclear energy output over several decades of different countries and found the top 10 countries that generated the most nuclear energy. As we used the percent change in nuclear energy, we found that the among the top countries, the US, Russia, and Indonesia have seen large growth in the amount of energy provided by nuclear power plants. The data set was narrowed down to 3 columns and several thousand rows in order to show the appropriate data. "),
+                            tags$li("Our second chart utilized the owid co2 data set. This extensive data set had more than 15k+ rows as well as more than 20 columns. We chose 3 columns to show appropriate data and plot Co2 emissions for country by year. Specifically we used the co2 (co2 emitted in million metric tons), year, and country columns. In order to show an appropriate range, we filtered the dataset to countries with populations over 100 million. This ensured that a large multitude of countries that had near zero/low co2 emissions weren't included. "),
+                            tags$li("For our last chart, we used the global_power_plant_database_last csv. This data set had more than 15+ columns and upwards of 20k rows. We looked at the primary fuel source and country column in order to determine aggregate counts of different type of energy plants.")
+                         ),
+                         
+                         h3("Findings"),
+                         p("We asked the following questions in hopes of gaining a better understanding of the viability of nuclear energy as an effective deterrent to climate change.:"),
+                         tags$ol(
+                           tags$li("How prevalent is nuclear energy in the world right now? Question 1's goal is to inform the rest of our analysis by creating the necessary context about the world's current nuclear energy production. In analyzing our data set, we chose to graph the highest percent change of nuclear power for many different countries over a time frame of ~60 years. What we found was that Brazil and Russia had had the most growth in creating more energy from their nuclear power plants. What was interesting was that even though Russia and Brazil did have high growth, countries that produce large amounts of CO2, such as China, India, and the US had relatively low growth. We found many other countries to also have low growth, but they also don't have much CO2 emissions, so their nuclear energy produced isn't as necessary. "),
+                           tags$li("Where is the most CO2 emission happening?  Question 2's goal: In order to be able to effectively undermine the effects of global warming by building nuclear power plants that have zero CO2 emissions, it is necessary to understand which countries have the largest CO2 emissions into the atmosphere. By plotting CO2 emissions of highly populated countries over time, we found that China, India, and Russia are the largest emitters of CO2. This is especially important as it allows us to know where the most effective locations would be to curb climate change as rapidly as possible. By decreasing the CO2 emissions of the worlds leading emitters, we can bring the amount of greenhouse gases in the atmosphere while using an efficient power source. "),
+                           tags$li("How does nuclear energy compare to other forms of alternative energy? Question 4's goal is to determine if other forms of alternative energy (solar, wind, etc.) are more or less viable than nuclear energy. One way we will answer this is by comparing the energy production of each form of power plant. Lastly, we used a data set which contained thousands of power plants located around the world. We aggregated each type of power plant and their respective power capacity. We found that the average nuclear powerplant dominates all other power plants with a 2000 MW capacity compared to the average capacity of coal power plants at about ~800 MW. Considering the fact that nuclear power plants don't have any greenhouse gas emissions, this provides a huge advantage to the typical power production plants we have today whether they are renewable or non-renewable. ")
+                         )
                          
                        )
 )
