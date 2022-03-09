@@ -279,9 +279,22 @@ reportPage <- tabPanel("Report",
                                    the construction of such plants, as it shows that moving forward with nuclear energy would arguably 
                                    be one of the faster and cleaner ways to move towards renewable energy as less land would be 
                                    turned into industrial power-producing zones."),
-                           tags$li("Studying Question 1 showed us that on average, nuclear energy generation throughout the world is 
-                                   incresaing at a rate of roughly")
-                         )
+                           tags$li("Studying Question 2 showed us that 50% of the world's CO2 emissions are being produced by one 
+                                   of four countries. This allows us to imply that certain countries may be more in need of nuclear 
+                                   energy than others. We live in a time where people are apprehensive of nuclear energy, for a good 
+                                   reason, and it cannot be expected to develop funcional nuclear plants in every country, as the 
+                                   damage that could be caused through an accident would be severe. If certain countries that 
+                                   produce relatively more CO2 emissions are the ones that develop these nuclear power plants, 
+                                   we would be able to cut down on global CO2 emissions by a significant amount.")
+                         ),
+                         
+                         h3("Conclusion"),
+                         p("In conclusion, it can be stated that nuclear energy has viability as an alternative energy source. Its 
+                           usage allows a significantly larger amount of energy to be generated per plant. A potential downside is 
+                           how risky these plants are considered to be, but this can be countered by only constructing them in 
+                           countries with a lot of CO2 emissions. By doing so, we will be able to minimize the potential risk of 
+                           accidents in these plants while also maximizing the environmental benefits of switching. In spite of the 
+                           stigma surrounding these plants, they will be huge allies in the battle against climate change.")
                          
                        )
 )
