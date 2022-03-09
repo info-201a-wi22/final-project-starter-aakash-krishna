@@ -1,10 +1,32 @@
 library(dplyr)
 library(plotly)
 
+energy_consumption_csv <- read.csv("../data/Primary-energy-consumption-from-fossilfuels-nuclear-renewables.csv")
 owid_data_csv <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-aakash-krishna/main/data/owid-co2-data.csv")
 power_plant_data_csv <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-aakash-krishna/main/data/global_power_plant_database_last.csv")
   
 server <- function(input,output) {
+  
+  output$page1_chart <- renderPlotly({
+    consumption_data <- energy_consumption_csv %>%
+      filter(Year >= input$page1_year[1] &
+               Year <= input$page1_year[2] &
+               Entity == input$page1_country) %>%
+      mutate(ratio = ifelse(Renewables....sub.energy. == 0, 0, Nuclear....sub.energy./Renewables....sub.energy.))
+    consumption_data$x <- consumption_data[["Year"]]
+    consumption_data$y <- consumption_data[["Nuclear....sub.energy."]]
+    consumption_data$ratio <- consumption_data[["ratio"]]
+    plot <- plot_ly(consumption_data, x = ~x, y = ~y, type = "scatter",
+                    hovertemplate = paste(
+                      "%{xaxis.title.text}: %{x}<br>",
+                      "%{yaxis.title.text}: %{y}<br>"
+                    )) %>% 
+      layout(xaxis = list( title="Year"), 
+             yaxis = list( title="Percent of Energy from Nuclear Sources"),
+             title = paste("Changes in Usage of Nuclear Energy in", input$page1_country," Over Time"))
+    plot
+  })
+  
   output$page2_chart <- renderPlotly({
     df <- owid_data_csv %>% 
       filter(year >= input$page2_year[1]  & 

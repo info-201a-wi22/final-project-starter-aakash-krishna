@@ -52,9 +52,20 @@ interPage1 <- tabPanel("Interactive Page 1",
                        sidebarLayout(
                          sidebarPanel(
                            h2("Widgets"),
+                           sliderInput("page1_year", label = "Year", min = 1965,
+                                       max = 2019, value = c(1965, 2019)),
+                           selectInput("page1_country", "Entity", c("World", "Brazil", "China", "India", "Mexico",
+                                                                    "Pakistan", "Russia", "United States",
+                                                                    "Mexico", "Japan"), selected = "World"),
                          ),
                          mainPanel(
-                           h2("Chart")
+                           h2("Chart"),
+                           plotlyOutput("page1_chart", height = "600px"),
+                           h4("Reasoning"),
+                           p("In order to understand how the usage of nuclear energy has changed in the last 50 
+                             years, we utilized data from the Kaggle dataset studying methods of primary 
+                             energy consumption."),
+                           p("After plotting this data, we discovered that")
                          )
                        )
 )
