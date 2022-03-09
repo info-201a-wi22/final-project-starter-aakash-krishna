@@ -16,7 +16,7 @@ server <- function(input,output) {
     consumption_data$x <- consumption_data[["Year"]]
     consumption_data$y <- consumption_data[["Nuclear....sub.energy."]]
     consumption_data$ratio <- consumption_data[["ratio"]]
-    plot <- plot_ly(consumption_data, x = ~x, y = ~y, type = "scatter",
+    plot <- plot_ly(consumption_data, x = ~x, y = ~y, type = "scatter", size = ~ratio + 2, mode = "markers",
                     hovertemplate = paste(
                       "%{xaxis.title.text}: %{x}<br>",
                       "%{yaxis.title.text}: %{y}<br>"

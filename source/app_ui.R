@@ -54,7 +54,7 @@ interPage1 <- tabPanel("Interactive Page 1",
                            h2("Widgets"),
                            sliderInput("page1_year", label = "Year", min = 1965,
                                        max = 2019, value = c(1965, 2019)),
-                           selectInput("page1_country", "Entity", c("World", "Brazil", "China", "India", "Mexico",
+                           selectInput("page1_country", "Country", c("World", "Brazil", "China", "India", "Mexico",
                                                                     "Pakistan", "Russia", "United States",
                                                                     "Mexico", "Japan"), selected = "World"),
                          ),
@@ -65,7 +65,17 @@ interPage1 <- tabPanel("Interactive Page 1",
                            p("In order to understand how the usage of nuclear energy has changed in the last 50 
                              years, we utilized data from the Kaggle dataset studying methods of primary 
                              energy consumption."),
-                           p("After plotting this data, we discovered that")
+                           p("After plotting this data, we discovered that Russia and the United States are 
+                             easily the top two in terms of percentage of energy generated from nuclear sources. 
+                             This was not always the case. Until 2011, Japan had rates of nuclear 
+                             energy usage that were over double Russia's, the decrease probably being traced back 
+                             to the 2011 Fukushima nuclear disaster. Regardless, in spite of the massive amounts of 
+                             energy generated through nuclear power, the usage of nuclear energy in any of the 
+                             countries measured did not exceed Japan's maximum of 15.2%. This suggests that we 
+                             may not be utilizing nuclear power to its fullest potential. Increasing this reliance 
+                             on cleaner sources of power such as nuclear energy may help reduce the increase
+                             of global warming, and provide sufficient energy for an exponentially growing population 
+                             as a bonus.")
                          )
                        )
 )
@@ -92,7 +102,7 @@ interPage2 <- tabPanel("Interactive Page 2",
                             p("After plotting the CO2 emissions of each country in the 
                               subset by year, we found that out of a reported ~30 billion metric tons, the top 4 countries (China, 
                               the US, India, and Russia) produce ~50% of the total global carbon emissions. This indicates that in 
-                              order to effectively reduce climate change, a large-scale adoptsion of nuclear energy is more needed in  
+                              order to effectively reduce climate change, a large-scale adoption of nuclear energy is more needed in  
                               highly populated countries which have high power consumption needs.")
                           )
                         )
@@ -222,9 +232,55 @@ reportPage <- tabPanel("Report",
                          h3("Findings"),
                          p("We asked the following questions in hopes of gaining a better understanding of the viability of nuclear energy as an effective deterrent to climate change.:"),
                          tags$ol(
-                           tags$li("How prevalent is nuclear energy in the world right now? Question 1's goal is to inform the rest of our analysis by creating the necessary context about the world's current nuclear energy production. In analyzing our data set, we chose to graph the highest percent change of nuclear power for many different countries over a time frame of ~60 years. What we found was that Brazil and Russia had had the most growth in creating more energy from their nuclear power plants. What was interesting was that even though Russia and Brazil did have high growth, countries that produce large amounts of CO2, such as China, India, and the US had relatively low growth. We found many other countries to also have low growth, but they also don't have much CO2 emissions, so their nuclear energy produced isn't as necessary. "),
-                           tags$li("Where is the most CO2 emission happening?  Question 2's goal: In order to be able to effectively undermine the effects of global warming by building nuclear power plants that have zero CO2 emissions, it is necessary to understand which countries have the largest CO2 emissions into the atmosphere. By plotting CO2 emissions of highly populated countries over time, we found that China, India, and Russia are the largest emitters of CO2. This is especially important as it allows us to know where the most effective locations would be to curb climate change as rapidly as possible. By decreasing the CO2 emissions of the worlds leading emitters, we can bring the amount of greenhouse gases in the atmosphere while using an efficient power source. "),
-                           tags$li("How does nuclear energy compare to other forms of alternative energy? Question 4's goal is to determine if other forms of alternative energy (solar, wind, etc.) are more or less viable than nuclear energy. One way we will answer this is by comparing the energy production of each form of power plant. Lastly, we used a data set which contained thousands of power plants located around the world. We aggregated each type of power plant and their respective power capacity. We found that the average nuclear powerplant dominates all other power plants with a 2000 MW capacity compared to the average capacity of coal power plants at about ~800 MW. Considering the fact that nuclear power plants don't have any greenhouse gas emissions, this provides a huge advantage to the typical power production plants we have today whether they are renewable or non-renewable. ")
+                           tags$li(em("How prevalent is nuclear energy in the world right now?"), " Question 1's goal is to inform 
+                                   the rest of our analysis by creating the necessary context about the world's current nuclear 
+                                   energy production. In analyzing our data set, we chose to graph the highest percent 
+                                   change of nuclear power for many different countries over a time frame of ~60 years. What 
+                                   we found was that Brazil and Russia had had the most growth in creating more energy from 
+                                   their nuclear power plants. What was interesting was that even though Russia and Brazil did 
+                                   have high growth, countries that produce large amounts of CO2, such as China, India, and the 
+                                   US had relatively low growth. We found many other countries to also have low growth, but 
+                                   they also don't have much CO2 emissions, so their nuclear energy produced isn't as necessary. "),
+                           tags$li(em("Where is the most CO2 emission happening?"), "  Question 2's goal: In order to be able 
+                                   to effectively undermine the effects of global warming by building nuclear power plants that 
+                                   have zero CO2 emissions, it is necessary to understand which countries have the largest CO2 
+                                   emissions into the atmosphere. By plotting CO2 emissions of highly populated countries over 
+                                   time, we found that China, India, and Russia are the largest emitters of CO2. This is 
+                                   especially important as it allows us to know where the most effective locations would be 
+                                   to curb climate change as rapidly as possible. By decreasing the CO2 emissions of the world's 
+                                   leading emitters, we can bring the amount of greenhouse gases in the atmosphere while using 
+                                   an efficient power source. "),
+                           tags$li(em("How does nuclear energy compare to other forms of alternative energy?"), " Question 3's goal 
+                                   is to determine if other forms of alternative energy (solar, wind, etc.) are more or less viable 
+                                   than nuclear energy. One way we will answer this is by comparing the energy of each 
+                                   form of power plant. Lastly, we used a data set which contained thousands of power plants located 
+                                   around the world. We aggregated each type of power plant and their respective power capacity. We 
+                                   found that the average nuclear powerplant dominates all other power plants with a 2000 MW capacity 
+                                   compared to the average capacity of coal power plants at about ~800 MW. Considering the fact that 
+                                   nuclear power plants don't have any greenhouse gas emissions, this provides a huge advantage to 
+                                   the typical power production plants we have today whether they are renewable or non-renewable. ")
+                         ),
+                         
+                         h3("Discussion"),
+                         p("Answering the questions we posed to ourselves provided us with implications that could be drawn from the 
+                           results to said questions."),
+                         tags$ul(
+                           tags$li("Looking at what we found when answering Questions 1 and 2, we can infer that the most CO2 emissions 
+                                   are happening in countries where the growth of usage of nuclear energy is relatively lower. This in 
+                                   turn implies that by increasing production of nuclear energy, countries like Russia and Brazil were 
+                                   able to meet their countries' energy needs without resorting to fossil fuels and thus emitted less 
+                                   CO2 overall. Since these two countries are concrete examples of the same (Japan could be considered 
+                                   one as well but its unusual circumstances mean that we will leave it out of consideration for the 
+                                   time-being), they show that countries with high CO2 production have the potential to reduce their 
+                                   emissions by relying more on nuclear energy."),
+                           tags$li("Our study of Question 3 led us to the conclusion that a singular power plant producing nuclear 
+                                   energy can produce significantly more energy than a solar or wind generating plant in a 
+                                   comparable amount of space. Establishing this using data is incredibly important to justify 
+                                   the construction of such plants, as it shows that moving forward with nuclear energy would arguably 
+                                   be one of the faster and cleaner ways to move towards renewable energy as less land would be 
+                                   turned into industrial power-producing zones."),
+                           tags$li("Studying Question 1 showed us that on average, nuclear energy generation throughout the world is 
+                                   incresaing at a rate of roughly")
                          )
                          
                        )
